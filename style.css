@@ -1942,3 +1942,42 @@ button {
     padding-top: 3px;
     font-style: italic;
 }
+
+/* COPY EMAIL BUTTON */
+.copy-email-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding: 11px 18px;
+
+    background: rgba(57, 217, 138, 0.08);
+    color: var(--emerald);
+    border: 1px solid rgba(57, 217, 138, 0.35);
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: background 0.25s ease,
+                border-color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.copy-email-button:hover {
+    background: rgba(57, 217, 138, 0.15);
+    border-color: var(--emerald);
+    transform: translateY(-2px);
+}
+
+.copy-email-button:focus-visible {
+    outline: 2px solid var(--emerald);
+    outline-offset: 3px;
+}
+
+.copy-email-button span {
+    font-size: 1rem;
+}
